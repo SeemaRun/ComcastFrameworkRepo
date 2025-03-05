@@ -28,6 +28,9 @@ public class HomePage {
 		@FindBy(linkText ="More")
 		WebElement morelink;
 		
+		@FindBy(linkText ="Products")
+		private WebElement productlink;
+		
 		@FindBy(xpath="//img[@src='themes/softed/images/user.PNG']")
 		WebElement adminImg;
 		
@@ -66,6 +69,10 @@ public class HomePage {
 
 		public WebElement getSignOutLink() {
 			return signOutLink;
+		}
+		
+		public WebElement getProductlink() {
+			return productlink;
 		}
 
 		//Rule5: provide ACtion(business Library)
